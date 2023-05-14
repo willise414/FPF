@@ -1,0 +1,15 @@
+{
+  "name": "fpf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://willise414.github.io/FPF",
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}

@@ -7,15 +7,15 @@ const openNav = () => {
   openNavBtn.style.display = "none";
   closeNavBtn.style.display = "inline-block";
 };
-openNavBtn.addEventListener("click", openNav);
 
 const closeNav = () => {
   nav.style.display = "none";
   openNavBtn.style.display = "inline-block";
   closeNavBtn.style.display = "none";
 };
+openNavBtn.addEventListener("click", openNav);
 closeNavBtn.addEventListener("click", closeNav);
 
 window.onresize = function () {
-  location.reload;
+  location.reload();
 };

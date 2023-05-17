@@ -227,6 +227,9 @@ nav button {
   gap: 5%;
   overflow: hidden;
 }
+.latest__news {
+  margin-top: 7rem;
+}
 .latest {
   font-size: 3rem;
   padding-bottom: 1rem;
@@ -261,6 +264,52 @@ nav button {
   position: absolute;
 }
 
+/* ============================ FAQ ============================ */
+.faqs h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+.faqs__container {
+  width: var(--container-width-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.faq {
+  background: rgba(220, 220, 220, 0.3);
+  border: 1px solid #ddd;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+.faq:hover {
+  border-color: var(--color-brown);
+}
+.faq_icon i {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.faq__question {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.faq__answer {
+  margin-top: 1rem;
+  display: none;
+  color: var(--color-green);
+  font-size: 0.9rem;
+}
+.faq.open {
+  border-color: var(--color-brown);
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.faq.open .faq__answer {
+  display: block;
+}
+
 /* ================================ MEDIA (MEDIUM DEVICES)===================================== */
 @media screen and (max-width: 1024px) {
   h1 {
@@ -272,6 +321,7 @@ nav button {
   .header {
     height: min-content;
   }
+
   .nav__container {
     width: var(--container-width-md);
     position: relative;
@@ -332,10 +382,17 @@ nav button {
     grid-template-columns: 1fr;
     width: 100vw;
   } */
-
+  .latest__news {
+    margin-top: 3rem;
+  }
   .latest__text p {
     font-size: 0.9rem;
     padding: 0 0.7rem;
+  }
+  /* ============================== FAQ =========================== */
+  .faqs {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 @media screen and (max-width: 900px) {
@@ -360,6 +417,7 @@ nav button {
   .latest__news {
     width: 100%;
     padding: 0 2rem;
+    margin-top: 3rem;
   }
   .featured {
     padding-bottom: 3rem;

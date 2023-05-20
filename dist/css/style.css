@@ -93,6 +93,9 @@ img {
   width: 100%;
   object-fit: cover;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* ======================================== NAV ===================================== */
 
@@ -402,7 +405,7 @@ nav button {
   border: none;
 }
 .hidden {
-  display: none;
+  display: none !important;
 }
 .test {
   background: red;
@@ -419,6 +422,16 @@ nav button {
 .info {
   width: 100%;
   height: 100%;
+}
+.bod__button {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+}
+
+.bod__container {
+  scroll-behavior: smooth;
 }
 
 /* ================================ MEDIA (MEDIUM DEVICES)===================================== */
@@ -507,6 +520,9 @@ nav button {
   .info {
     height: 100%;
     width: 100%;
+  }
+  .hidden {
+    display: none !important;
   }
   .info__container {
     display: flex;
@@ -650,11 +666,24 @@ nav button {
     padding: 0 0.5rem;
   }
   /*  ===================== ABOUT ===================== */
+  .about__us-text h2 {
+    font-size: 2rem;
+  }
+  .about__us-text p {
+    font-size: 1rem;
+  }
+  .bod__container h2 {
+    font-size: 2rem;
+  }
   .image__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+  }
+  .image__container img {
+    height: 7rem;
+    width: 7rem;
   }
   .info {
     height: 100%;

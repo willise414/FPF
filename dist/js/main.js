@@ -36,3 +36,22 @@ faqs.forEach((faq) => {
     }
   });
 });
+
+// DIRECTORS
+const infoBtn = document.querySelector(".image__container");
+const showInfo = document.querySelectorAll(".show__info");
+const text = document.querySelectorAll(".text");
+const infoContainer = document.querySelectorAll("info__container");
+
+for (let i = 0; i < showInfo.length; i++) {
+  showInfo[i].addEventListener("click", function () {
+    // console.log(showInfo[i].id);
+    let infoText = showInfo[i].id;
+    console.log(infoText); // shows correct ID
+    if (text[i].classList.contains(infoText)) {
+      text[i].classList.remove("hidden");
+    } else if (!text.classList.contain("hidden")) {
+      text.classList.add("hidden");
+    }
+  });
+}

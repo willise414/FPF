@@ -83,7 +83,10 @@
         </p>
       </div>
     </div>
-    <div class="container bod__title">
+
+    <!-- DIRECTORS -->
+
+    <!-- <div class="container bod__title">
       <h2>Board of Directors</h2>
     </div>
     <div class="container bod__container">
@@ -95,7 +98,7 @@
           <h2 class="profile__name">Dan Rubin</h2>
           <p class="profile__position">Chairperson</p>
         </div>
-        <button class="bio">My Bio</button>
+        <button class="bio" id="rubin">My Bio</button>
       </div>
       <div class="card">
         <div class="profile__sidebar">
@@ -179,8 +182,88 @@
           <a href="#">My Bio</a>
         </button>
       </div>
-    </div>
+    </div> -->
 
+    <!-- END DIRECTORS -->
+    <div class="container bod__container">
+      <h2 class="bod__heading">Board of Directors</h2>
+      <div class="image__container">
+        <button class="show__info" id="rubin">
+          <div class="image">
+            <img
+              class="profile"
+              id="rubin"
+              src="./images/Dan Rubin.jpg"
+              alt=""
+            />
+            <h4 class="member__name">Dan Rubin</h4>
+          </div>
+        </button>
+        <button class="show__info" id="carter">
+          <div class="image">
+            <img
+              class="profile"
+              id="carter"
+              src="./images/Jeremy Carter.jpg"
+              alt=""
+            />
+            <h4 class="member__name">Jeremy Carter</h4>
+          </div>
+        </button>
+        <div class="image">
+          <img src="./images/Alison Snow.jpg" alt="" />
+          <h4 class="member__name">Alison Snow</h4>
+        </div>
+        <div class="image">
+          <img src="./images/Heather Rhodes.jpg" alt="" />
+          <h4 class="member__name">Heather Rhodes</h4>
+        </div>
+        <div class="image">
+          <img src="./images/Samantha Young.jpeg" alt="" />
+          <h4 class="member__name">Samantha Young</h4>
+        </div>
+        <div class="image">
+          <img src="./images/Tim Walsh.jpg" alt="" />
+          <h4 class="member__name">Tim Walsh</h4>
+        </div>
+        <div class="image">
+          <img src="./images/Atanu Sarkar.jpg" alt="" />
+          <h4 class="member__name">Dr. Atanu Sarkar</h4>
+        </div>
+        <div class="image">
+          <img src="./images/Solange-Fuekang.jpg" alt="" />
+          <h4 class="member__name">Solange Fuekang</h4>
+        </div>
+        <div class="image">
+          <img src="./images/Rachel Snelgrove.jpg" alt="" />
+          <h4 class="member__name">Rachel Snelgrove</h4>
+        </div>
+        <!-- <div class="info__container">
+          <img src="./images/Dan Rubin.jpg" alt="" />
+          <div class="info">
+            <h2 class="name" id="name">Dan Rubins</h2>
+            <h3 class="status" id="status">Chairperson</h3>
+            <p class="about" id="about">Dan Rubin Bio</p>
+          </div>
+        </div> -->
+      </div>
+      <div class="info__container text rubin hidden" id="rubin">
+        <img src="./images/Dan Rubin.jpg" alt="" />
+        <div class="info">
+          <h2 class="name" id="name">Dan Rubins</h2>
+          <h3 class="status" id="status">Chairperson</h3>
+          <p class="about" id="about">Dan Rubin Bio</p>
+        </div>
+      </div>
+      <div class="info__container text carter hidden" id="carter">
+        <img src="./images/Jeremy Carter.jpg" alt="" />
+        <div class="info">
+          <h2 class="name" id="name">Jeremy Carter</h2>
+          <h3 class="status" id="status">Vice Chair</h3>
+          <p class="about" id="about">Jeremy Carter Bio</p>
+        </div>
+      </div>
+    </div>
     <script src="./js/main.js"></script>
   </body>
 </html>

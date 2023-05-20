@@ -344,6 +344,9 @@ nav button {
   padding: 2rem;
   align-items: center;
 }
+.profile__body p {
+  font-size: 2rem;
+}
 
 .card .profile__main h2 {
   font-size: 2rem;

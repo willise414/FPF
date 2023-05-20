@@ -575,7 +575,7 @@ nav button {
   display: block;
   text-align: center;
 }
-img {
+.image img {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
